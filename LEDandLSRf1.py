@@ -5,7 +5,7 @@ with schemdraw.Drawing() as d:
 
     unit = d.unit
 
-    V2 = d.add(elm.SourceV().label('9v').length(unit*2))
+    V1 = d.add(elm.SourceV().label('9v').length(unit*2))
     d.add(elm.Line().right(unit*.75).dot())
     L1 = d.add(elm.Photoresistor().down().dot())
     P1 = d.add(elm.Potentiometer().dot())
