@@ -1,7 +1,8 @@
-# SchemDraw library modified
+# LightFish
 
-Version: 0.3.0
+Version: 0.0.1
 
-## Modifications
+## New features
 
-- Add `id` attribute in main axis and circle 
+- New `dataset` for the model
+- Based on `Falcon Model` to create new experiences
