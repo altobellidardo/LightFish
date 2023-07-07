@@ -9,7 +9,7 @@ with schemdraw.Drawing() as d:
     unit = d.unit
 
     # Add a voltage source element (9V) to the diagram
-    d+= (V1 := elm.SourceV().label('9v').length(unit*4))
+    d+= (V2 := elm.SourceV().label('9v').length(unit*4))
     # Add the first LED element (D1) to the diagram
     d+= (D1 := elm.LED().at((unit,unit*4)).down().label("D1\n2v"))
     # Add the second LED element (D2) to the diagram
