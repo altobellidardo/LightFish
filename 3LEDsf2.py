@@ -1,0 +1,38 @@
+import schemdraw
+import schemdraw.elements as elm
+
+# 3 serial LEDs connected limited to 10mA
+
+# Create a new schematic diagram object
+with schemdraw.Drawing() as d:
+    # Get the default size of the drawing elements
+    unit = d.unit
+
+    # Add a voltage source element (9V) to the diagram
+    V1 = elm.SourceV().label('9v').length(unit*4)
+    d += V1
+
+    # Add the first LED element (D1) to the diagram
+    D1 = elm.LED().at((unit, unit*4)).down().label("D1\n2v")
+    d += D1
+
+    # Add the second LED element (D2) to the diagram
+    D2 = elm.LED().label("D2\n2v")
+    d += D2
+
+    # Add the third LED element (D3) to the diagram
+    D3 = elm.LED().label("D3\n2v")
+    d += D3
+
+    # Add a resistor element (R1) to the diagram
+    R1 = elm.Resistor().label('R1\n300$\\Omega$', loc="bottom")
+    d += R1
+
+    # Connect the voltage source to the first LED
+    d += elm.Wire().at(V1.end).to(D1.start)
+
+    # Connect the resistor to the voltage source
+    d += elm.Wire().at(R1.end).to(V1.start)
+
+    # Draw the schematic diagram
+    d.draw()
