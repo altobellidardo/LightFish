@@ -3,6 +3,8 @@ import schemdraw.elements as elm
 
 # 3 serial LEDs connected limited to 10mA
 
+# Rulli putito
+
 # Create a new schematic diagram object
 with schemdraw.Drawing() as d:
     # Get the default size of the drawing elements
