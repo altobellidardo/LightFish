@@ -3,15 +3,13 @@ import schemdraw.elements as elm
 
 # 3 serial LEDs connected limited to 10mA
 
-# Rulli putito
-
 # Create a new schematic diagram object
 with schemdraw.Drawing() as d:
     # Get the default size of the drawing elements
     unit = d.unit
 
     # Add a voltage source element (9V) to the diagram
-    d+= (V2 := elm.SourceV().label('9v').length(unit*4))
+    d+= (V1 := elm.SourceV().label('9v').length(unit*4))
     # Add the first LED element (D1) to the diagram
     d+= (D1 := elm.LED().at((unit,unit*4)).down().label("D1\n2v"))
     # Add the second LED element (D2) to the diagram
