@@ -1,0 +1,6 @@
+[
+    {
+        "prompt": "add a diode",
+        "output": "d += elm.Diode()"
+    }
+]
