@@ -2,7 +2,13 @@
 import schemdraw
 import schemdraw.elements as elm
 
-# Circuit to change the intensity of the light with the brightness
+""" 
+Circuit to change the intensity of the light with the brightness
+
+An LDR is used to adjust the brightness of an LED based on the ambient
+light intensity. As the incident light on the LDR varies, its resistance changes,
+affecting the current flowing through the LED, and thus its brightness.
+"""
 
 # Create a new schematic diagram object
 with schemdraw.Drawing() as d:

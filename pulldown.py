@@ -1,7 +1,13 @@
 import schemdraw
 import schemdraw.elements as elm
 
-# Pull Down Circuit
+""" 
+Pull Down Circuit
+
+Similar to pull-up, this circuit is used to ensure that an input pin has a
+low logic state when no external signal is applied. It consists of a resistor
+connected between the input pin and a negative voltage source or ground (GND).
+"""
 
 # Create a new schematic diagram object
 with schemdraw.Drawing() as d:

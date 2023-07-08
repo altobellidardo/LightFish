@@ -1,20 +1,3 @@
-# LightFish
-
-![ver imagen](docs/logo.png)
-
-Version: 0.0.1 - 07/07/2023
-
-
-## New features
-
-- New `dataset` for the model
-- Based on `Falcon Model` to create new experiences
-
-## example
-
-![ver imagen](docs/Figure_1.png)
-
-``` python
 import schemdraw
 from schemdraw import elements as elm
 
@@ -30,12 +13,3 @@ with schemdraw.Drawing() as d:
     d += elm.Line().tox(r1.start)
 
     d.draw()
-```
-
-### License 
-
-© All rights reserved LightFish 2023
-
-Founder: Dardo Altobelli
-
-Co-founder: Maximo Rulli

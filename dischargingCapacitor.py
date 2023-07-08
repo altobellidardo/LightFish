@@ -2,7 +2,12 @@
 import schemdraw
 import schemdraw.elements as elm
 
-# circuit of charge or discharge the capacitor depending on the switch position.
+""" 
+circuit of charge or discharge the capacitor depending on the switch position.
+
+This circuit is used to charge and discharge a capacitor through a resistor.
+It can be used in various applications such as timers, oscillators, and filters.
+"""
 
 # Create a new schematic diagram object
 with schemdraw.Drawing() as d:

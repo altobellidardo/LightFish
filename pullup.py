@@ -1,7 +1,13 @@
 import schemdraw
 import schemdraw.elements as elm
 
-# Pull Up Circuit
+"""
+Pull Up Circuit
+
+This circuit is used to ensure that an input pin of a microcontroller or logic device
+has a high logic state when no external signal is applied.
+It consists of a resistor connected between the input pin and a positive voltage source.
+"""
 
 # Create a new schematic diagram object
 with schemdraw.Drawing() as d:

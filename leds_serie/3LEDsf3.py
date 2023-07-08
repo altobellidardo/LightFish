@@ -1,7 +1,14 @@
 import schemdraw
 import schemdraw.elements as elm
 
-# 3 serial LEDs connected limited to 10mA
+""" 
+3 serial LEDs connected limited to 10mA
+
+When multiple LEDs are connected in series, the current is the same for
+all of them, and the sum of the voltage drops across each LED equals the
+total applied voltage. This allows controlling multiple LEDs using a single
+current or voltage source.
+"""
 
 # Create a new schematic diagram object
 with schemdraw.Drawing() as d:

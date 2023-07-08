@@ -1,6 +1,14 @@
 import schemdraw
 import schemdraw.elements as elm
 
+""" 
+H Bridge
+
+This circuit is used to control the direction and speed of a DC motor or
+a stepper motor. It allows current to flow in both directions through the motor,
+enabling it to rotate in both directions.
+"""
+
 # Create a new schematic diagram object
 with schemdraw.Drawing() as d:
 
