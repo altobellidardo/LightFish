@@ -10,7 +10,7 @@ Version: 0.0.1 - 07/07/2023
 - New `dataset` for the model
 - Based on `Falcon Model` to create new experiences
 
-## example
+## Example
 
 ![ver imagen](docs/Figure_1.png)
 
